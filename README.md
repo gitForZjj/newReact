@@ -66,3 +66,25 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+
+### redux
+npm install --save redux
+
+### immutable 使用fromJS阻止原数据改变
+npm install immutable
+
+### redux-immutable 整合组件中的reducer
+npm install redux-immutable
+
+### redux-thunk 用于处理异步action，同类型的有redux-saga
+npm install redux-thunk
+
+### react-redux
+npm install --save react-redux
+
+### react-router-dom 路由
+npm install react-router-dom --save-dev
+
+### axios http请求
+npm install axios

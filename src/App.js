@@ -1,25 +1,24 @@
 import React from 'react';
-import logo from './logo.svg';
+import Header from './common/header';
+import { Provider } from 'react-redux';
+import store from './store';
+// import { BrowserRouter, Route } from 'react-router-dom';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    // 使用了池子的组件必须放在provider中
+    <Provider store={store}> 
+      <div className="App">
+        <Header>
+        </Header>
+        {/* <BrowserRouter> */}
+        {/* exact 只显示一个路由 */}
+          {/* <Route to='/' exact component={页面}></Route> */}
+        {/* </BrowserRouter> */}
+      </div>
+    </Provider>
+    
   );
 }
 
